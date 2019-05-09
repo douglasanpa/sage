@@ -5,14 +5,15 @@ services:
         image: douglasanpa/sage:latest
         container_name: sage
         ports:
-            - "8081:80"
+            - "80:80"
+            - "443:443"
         environment:
             - DB_HOST=mariadb
             - DB_DATABASE=sage
             - DB_USERNAME=sage
             - DB_PASSWORD=sage
             - MAIL_ADMIN=admin@admin.com
-            - APP_URL=http://localhost:8081
+            - APP_URL=https://localhost
         volumes:
             - ./sage:/src/storage
         depends_on:
@@ -31,6 +32,3 @@ services:
           - MYSQL_PASSWORD=sage
         volumes:
           - ./sagedb:/var/lib/mysql
-#volumes:
-#  sage: {}
-#  sagedb: {}
