@@ -7,15 +7,17 @@ services:
         ports:
             - "80:80"
             - "443:443"
+        restart: always
         environment:
             - DB_HOST=mariadb
             - DB_DATABASE=sage
             - DB_USERNAME=sage
             - DB_PASSWORD=sage
             - MAIL_ADMIN=admin@admin.com
-            - APP_URL=https://localhost
+            - APP_URL=http://localhost
         volumes:
             - ./sage:/src/storage
+            - ./certbot:/etc/letsencrypt
         depends_on:
             - mariadb
 
