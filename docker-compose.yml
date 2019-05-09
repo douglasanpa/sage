@@ -17,7 +17,7 @@ services:
             - APP_URL=http://localhost
         volumes:
             - ./sage:/src/storage
-            - ./certbot:/etc/letsencrypt
+            - ./sagecert:/etc/letsencrypt
         depends_on:
             - mariadb
 
