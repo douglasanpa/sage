@@ -10,3 +10,7 @@ edite o arquivo docker-compose.yml com as suas configurações e execute o siste
 > docker-compose up
 
 Para logar utilize o usuário admin@admin.com e senha secret
+
+Testar com Play With Docker
+---------------------------
+[Inicie o teste]http://play-with-docker.com/?stack=https://raw.githubusercontent.com/douglasanpa/sage/master/docker-compose.yml
