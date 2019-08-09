@@ -22,7 +22,7 @@ services:
             - mariadb
 
     mariadb:
-        image: mariadb
+        image: mariadb:5.5
         container_name: mariadb
         restart: always
         expose:
