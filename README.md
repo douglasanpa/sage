@@ -13,4 +13,4 @@ Para logar utilize o usuário admin@admin.com e senha secret
 
 Testar com Play With Docker
 ---------------------------
-[Abra o PWD e execute os comandos acima] (http://labs.play-with-docker.com/)
+[Abra o PWD e execute os comandos acima](http://labs.play-with-docker.com/)
