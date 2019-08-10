@@ -13,4 +13,4 @@ Para logar utilize o usuário admin@admin.com e senha secret
 
 Testar com Play With Docker
 ---------------------------
-[Inicie o teste]http://play-with-docker.com/?stack=https://raw.githubusercontent.com/douglasanpa/sage/master/docker-compose.yml
+[Abra o PWD e execute os comandos acima] (http://labs.play-with-docker.com/)
