@@ -18,7 +18,7 @@ services:
             - MAIL_HOST=smtp.googlemail.com
             - MAIL_PORT=465
             - MAIL_FROM_ADDRESS=admin@admin.com
-            - MAIL_FROM_NAME=Administrator
+            - MAIL_FROM_NAME="System Administrator"
             - MAIL_USERNAME=admin@admin.com
             - MAIL_PASSWORD=secret
             - MAIL_ENCRYPTION=ssl
