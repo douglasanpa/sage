@@ -15,6 +15,24 @@ services:
             - DB_PASSWORD=sage
             - MAIL_ADMIN=admin@admin.com
             - APP_URL=http://localhost
+            - MAIL_HOST=smtp.googlemail.com
+            - MAIL_PORT=465
+            - MAIL_FROM_ADDRESS=admin@admin.com
+            - MAIL_FROM_NAME=Administrator
+            - MAIL_USERNAME=admin@admin.com
+            - MAIL_PASSWORD=secret
+            - MAIL_ENCRYPTION=ssl
+            - OAUTH=false
+            - IFSP_KEY=
+            - IFSP_SECRET=
+            - IFSP_REDIRECT_URI=
+            - GOOGLE_KEY=
+            - GOOGLE_SECRET=
+            - GOOGLE_REDIRECT_URI=
+            - FACEBOOK_KEY=
+            - FACEBOOK_SECRET=
+            - FACEBOOK_REDIRECT_URI=
+
         volumes:
             - ./sage:/src/storage
             - ./sagecert:/etc/letsencrypt
