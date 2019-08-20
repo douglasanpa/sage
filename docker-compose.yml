@@ -15,13 +15,14 @@ services:
             - DB_PASSWORD=sage
             - MAIL_ADMIN=admin@admin.com
             - APP_URL=http://localhost
+            - APP_NAME="SAGE - Sistema de Apoio à Gestão de Eventos"
             - MAIL_HOST=smtp.googlemail.com
-            - MAIL_PORT=465
+            - MAIL_PORT=587
             - MAIL_FROM_ADDRESS=admin@admin.com
             - MAIL_FROM_NAME="System Administrator"
             - MAIL_USERNAME=admin@admin.com
             - MAIL_PASSWORD=secret
-            - MAIL_ENCRYPTION=ssl
+            - MAIL_ENCRYPTION=tls
             - OAUTH=false
             - IFSP_KEY=
             - IFSP_SECRET=
