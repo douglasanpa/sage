@@ -7,7 +7,13 @@ Configure o SAGE
 > nano docker-compose.yml
 
 Inicie o sistema
-> docker-compose up
+> docker-compose up -d sage mariadb
+
+Caso necessite do PHPMYADMIN
+> docker-compose up phpmyadmin
+
+Finalizando o PHPMYADMIN
+> docker-compose down phpmyadmin
 
 Para logar utilize o usuário admin@admin.com e senha secret
 
