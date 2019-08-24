@@ -1,12 +1,12 @@
 # SAGE
 Para utilizar você precisa do [docker-compose](https://docs.docker.com/compose/install/)
 faça o clone desse repositório
-> git clone https://github.com/douglasanpa/sage.git 
+> git clone https://github.com/douglasanpa/sage.git ; cd sage
 
-Entre na pasta
-> cd sage
+Configure o SAGE
+> nano docker-compose.yml
 
-edite o arquivo docker-compose.yml com as suas configurações e execute o sistema com
+Inicie o sistema
 > docker-compose up
 
 Para logar utilize o usuário admin@admin.com e senha secret
