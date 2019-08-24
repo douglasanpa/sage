@@ -53,3 +53,16 @@ services:
           - MYSQL_PASSWORD=sage
         volumes:
           - ./sagedb:/var/lib/mysql
+
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin:latest
+        container_name: 'phpmyadmin'
+        environment:
+            PMA_HOST: mysql
+            PMA_PORT: 3306
+        ports:
+            - '8080:80'
+        volumes: 
+            - /sessions
+        depends_on:
+            - mariadb
